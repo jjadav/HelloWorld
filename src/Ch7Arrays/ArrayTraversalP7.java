@@ -7,6 +7,7 @@ public class ArrayTraversalP7 {
         int[] array = {5, 2, 4, 1};
         System.out.println("before calling Michelle & Matthew's algo " +
                 Arrays.toString(array));
+        array=oliverAlgo(array);
         michelleMattAlgo(array);
         System.out.println("after calling Michelle & Matthew's algo " +
                 Arrays.toString(array));
@@ -19,8 +20,8 @@ public class ArrayTraversalP7 {
         for(int i = reversed.length-1; i>=0; i--){
             reversed[i] = oa[oa.length-i-1];
         }
-        oa = reversed;
-        return oa;
+        return reversed;
+        //return oa;
         //System.out.println(Arrays.toString(reversed));
     }
 
@@ -36,5 +37,4 @@ public class ArrayTraversalP7 {
             mma[mma.length - i - 1] = temp;
         }
     }
-
 }
