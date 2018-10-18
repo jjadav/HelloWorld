@@ -10,6 +10,7 @@ public class MostFrequentDigit {
     public static int liamPriceAlgo(int n) {
         //Step0: Create an array of integers
         int[] digitsTally = new int[10];
+        int x = 0;
         //Step1: Extract each digit from n until n > 0
         while (n > 0) {
             int digit = n % 10;
